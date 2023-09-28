@@ -1,0 +1,231 @@
+{
+	"ifmain": {
+		"prefix": "ifmain",
+		"body": [
+			"if __name__ == \"__main__\":",
+			"    ${0:main()}"
+		],
+		"description": "If main"
+	},
+	"ifmain2": {
+		"prefix": "ifmain2",
+		"body": [
+			"if __name__ == '__main__':",
+			"    ${0:main()}"
+		],
+		"description": "If main"
+	},
+	"from": {
+		"prefix": "from",
+		"body": [
+			"from $1 import $0"
+		],
+		"description": "Import from module"
+	},
+	"import": {
+		"prefix": "import",
+		"body": [
+			"import $0"
+		],
+		"description": "Import module"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if $1:",
+			"    $0"
+		],
+		"description": "If statement"
+	},
+	"elif": {
+		"prefix": "elif",
+		"body": [
+			"elif $1:",
+			"    $0"
+		],
+		"description": "Elif statement"
+	},
+	"else": {
+		"prefix": "else",
+		"body": [
+			"else:",
+			"    $0"
+		],
+		"description": "Else statement"
+	},
+	"match": {
+		"prefix": "match",
+		"body": [
+			"match $1:",
+			"    case $2",
+			"        $0"
+		],
+		"description": "Match statement"
+	},
+	"case": {
+		"prefix": "case",
+		"body": [
+			"case $1:",
+			"    $0"
+		],
+		"description": "Case statement"
+	},
+	"while": {
+		"prefix": "while",
+		"body": [
+			"while $1:",
+			"    $0"
+		],
+		"description": "While loop"
+	},
+	"for": {
+		"prefix": "for",
+		"body": [
+			"for $1 in $2:",
+			"    $0"
+		],
+		"description": "For loop"
+	},
+	"try": {
+		"prefix": "try",
+		"body": [
+			"try:",
+			"    $0"
+		],
+		"description": "Try statement"
+	},
+	"tryexcept": {
+		"prefix": "tryexcept",
+		"body": [
+			"try:",
+			"    $1",
+			"except $2:",
+			"    $0"
+		],
+		"description": "Try-except statement"
+	},
+	"except": {
+		"prefix": "except",
+		"body": [
+			"except $1:",
+			"    $0"
+		],
+		"description": "Except statement"
+	},
+	"finally": {
+		"prefix": "finally",
+		"body": [
+			"finally:",
+			"    $0"
+		],
+		"description": "Finally statement"
+	},
+	"def": {
+		"prefix": "def",
+		"body": [
+			"def $1($2):",
+			"    $0"
+		],
+		"description": "Function definition"
+	},
+	"defa": {
+		"prefix": "defa",
+		"body": [
+			"async def $1($2):",
+			"    $0"
+		],
+		"description": "Async function definition"
+	},
+	"async": {
+		"prefix": "async",
+		"body": [
+			"async def $1($2):",
+			"    $0"
+		],
+		"description": "Async function definition"
+	},
+	"class": {
+		"prefix": "class",
+		"body": [
+			"class $1:",
+			"    $0"
+		],
+		"description": "Class definition"
+	},
+	"definit": {
+		"prefix": "definit",
+		"body": [
+			"def __init__(self, $1):",
+			"    $0"
+		],
+		"description": "__init__ method"
+	},
+	"defnew": {
+		"prefix": "defnew",
+		"body": [
+			"def __new__(cls, $1):",
+			"    $0"
+		],
+		"description": "__new__ method"
+	},
+	"defm": {
+		"prefix": "defm",
+		"body": [
+			"def $1(self, $2):",
+			"    $0"
+		],
+		"description": "Method definition"
+	},
+	"defam": {
+		"prefix": "defam",
+		"body": [
+			"async def $1(self, $2):",
+			"    $0"
+		],
+		"description": "Async method definition"
+	},
+	"asyncm": {
+		"prefix": "asyncm",
+		"body": [
+			"async def $1(self, $2):",
+			"    $0"
+		],
+		"description": "Async method definition"
+	},
+	"defmstatic": {
+		"prefix": "defmstatic",
+		"body": [
+			"@staticmethod",
+			"def $1($2):",
+			"    $0"
+		],
+		"description": "Static method definition"
+	},
+	"defamstatic": {
+		"prefix": "defamstatic",
+		"body": [
+			"@staticmethod",
+			"async def $1($2):",
+			"    $0"
+		],
+		"description": "Async static method definition"
+	},
+	"defmclass": {
+		"prefix": "defmclass",
+		"body": [
+			"@classmethod",
+			"def $1(cls, $2):",
+			"    $0"
+		],
+		"description": "Class method definition"
+	},
+	"defamclass": {
+		"prefix": "defamclass",
+		"body": [
+			"@classmethod",
+			"async def $1(cls, $2):",
+			"    $0"
+		],
+		"description": "Async class method definition"
+	}
+}
