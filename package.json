@@ -1,9 +1,9 @@
 {
-	"name": "python-snippets",
-	"displayName": "Python Snippets",
+	"name": "atomic-python-snippets",
+	"displayName": "Atomic Python Snippets",
 	"description": "Python Snippets",
-	"version": "0.0.1",
-	"publisher": "vscode-samples",
+	"version": "0.1.0",
+	"publisher": "hmeqo",
 	"engines": {
 		"vscode": "^1.28.0"
 	},
@@ -13,9 +13,13 @@
 	"contributes": {
 		"snippets": [
 			{
-				"language": "javascript",
+				"language": "python",
 				"path": "./snippets.json"
 			}
 		]
-	}
+	},
+	"repository": {
+		"url": "https://github.com/hmeqo/vscode-python-snippets"
+	},
+	"icon": "./icon.png"
 }
