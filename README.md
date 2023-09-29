@@ -1,5 +1,7 @@
 # Python Snippets
 
+It is recommended to set the `editor.tabCompletion` to `true`. This allows you to quickly generate snippets for keywords by double-clicking the Tab key.
+
 | Abbr        | Description                       |
 | ----------- | --------------------------------- |
 | `ifmain`      | if \_\_name\_\_ == "\_\_main\_\_" |
