@@ -53,6 +53,14 @@
 		],
 		"description": "Else statement"
 	},
+	"with": {
+		"prefix": "with",
+		"body": [
+			"with $1:",
+			"    $0"
+		],
+		"description": "With statement"
+	},
 	"match": {
 		"prefix": "match",
 		"body": [
@@ -128,8 +136,8 @@
 		],
 		"description": "Function definition"
 	},
-	"defa": {
-		"prefix": "defa",
+	"adef": {
+		"prefix": "adef",
 		"body": [
 			"async def $1($2):",
 			"    $0"
@@ -176,24 +184,16 @@
 		],
 		"description": "Method definition"
 	},
-	"defam": {
-		"prefix": "defam",
+	"adefm": {
+		"prefix": "adefm",
 		"body": [
 			"async def $1(self, $2):",
 			"    $0"
 		],
 		"description": "Async method definition"
 	},
-	"asyncm": {
-		"prefix": "asyncm",
-		"body": [
-			"async def $1(self, $2):",
-			"    $0"
-		],
-		"description": "Async method definition"
-	},
-	"defmstatic": {
-		"prefix": "defmstatic",
+	"defstatic": {
+		"prefix": "defstatic",
 		"body": [
 			"@staticmethod",
 			"def $1($2):",
@@ -201,8 +201,8 @@
 		],
 		"description": "Static method definition"
 	},
-	"defamstatic": {
-		"prefix": "defamstatic",
+	"adefstatic": {
+		"prefix": "adefstatic",
 		"body": [
 			"@staticmethod",
 			"async def $1($2):",
@@ -210,8 +210,8 @@
 		],
 		"description": "Async static method definition"
 	},
-	"defmclass": {
-		"prefix": "defmclass",
+	"defclass": {
+		"prefix": "defclass",
 		"body": [
 			"@classmethod",
 			"def $1(cls, $2):",
@@ -219,8 +219,8 @@
 		],
 		"description": "Class method definition"
 	},
-	"defamclass": {
-		"prefix": "defamclass",
+	"adefclass": {
+		"prefix": "adefclass",
 		"body": [
 			"@classmethod",
 			"async def $1(cls, $2):",
